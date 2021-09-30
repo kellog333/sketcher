@@ -17,6 +17,28 @@ class Pen extends PaperTools {
     doMouseDown(event) {
         let layer = createLayer();
         local.path = new paper.Path();
-        local.path.strokeColor = this.color
+        local.path.strokeColor = this.color;
+        local.path.lineWidth = this.lineWidth;
+        local.path.add(event.point);
+
+        local.group.addChild(new paper.Shape.Ellipse({
+            layer: layer,
+            center: event.point,
+            strokeColor: this.color,
+            fillColor: this.color,
+            radius: this.lineWidth / 2
+        }));
+        layer.addChild(local.group);
+    }
+
+    doMouseMove(event) {
+        if (!local.path) return;
+        local.path.add(event.point);
+        local.path.selected = true;
+    }
+
+    doMouseUp(event) {
+        local.path.add(event.point);
+        local.path.simplify();
     }
 }
