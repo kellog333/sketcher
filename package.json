@@ -1,0 +1,38 @@
+{
+  "name": "@kellog333/sketcher",
+  "version": "1.0.0",
+  "description": "Sketchpad for react",
+  "main": "./src/index.js",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kellog333/sketcher.git"
+  },
+  "keywords": [
+    "react",
+    "sketch",
+    "whiteboard",
+    "paper"
+  ],
+  "author": {
+    "name": "Kevin Heuser",
+    "email": "kheuser79@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kellog333/sketcher/issues"
+  },
+  "homepage": "https://github.com/kellog333/sketcher#readme",
+  "dependencies": {
+    "paper": "^0.12.15",
+    "uuid4": "^2.0.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
