@@ -29,6 +29,8 @@
   "homepage": "https://github.com/kellog333/sketcher#readme",
   "dependencies": {
     "paper": "^0.12.15",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
     "uuid4": "^2.0.2"
   },
   "devDependencies": {
